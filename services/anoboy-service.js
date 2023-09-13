@@ -57,7 +57,7 @@ module.exports.getLatestAnime = async (req, res) => {
               param: param,
               thumbnail: image,
               upload_time: uploadTime,
-              detail_url: `${url}/${param}`,
+              detail_url: `${url}/detail/${param}`,
             });
           }
         });
@@ -223,7 +223,7 @@ module.exports.getAnimeByParam = async (req, res) => {
 
             episodeNavigation.push({
               nav_name: episodeName,
-              nav_link: `${url}/${param}`,
+              nav_link: `${url}/detail/${param}`,
             });
           }
         });
